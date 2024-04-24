@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const url = "mongodb://sneha862:gautam2003@<hostname>/?ssl=true&replicaSet=atlas-pmmede-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0"
+const url = "mongodb+srv://harshitagautam773:2003sneha@cluster0.9oxcakt.mongodb.net/myDatabase?retryWrites=true&w=majority&appName=Cluster0"
 
 // asynchronous function
 mongoose.connect(url)
@@ -11,4 +11,4 @@ mongoose.connect(url)
     console.log(err);
 });
 
-console.log('something else');
+module.exports = mongoose;
