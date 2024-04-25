@@ -3,7 +3,8 @@ const router  = express.Router();
 const Model = require('../models/userModel');
 
 //add
-router.get('/add', (req, res) => {
+router.post('/add', (req, res) => {
+    console.log(req.body);
     res.send('Response from user add');
 });
 
